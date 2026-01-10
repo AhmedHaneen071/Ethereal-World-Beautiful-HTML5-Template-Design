@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oleo Script Swash Caps';
+}
+
+.wrepper {
+    width: 100%;
+    height: 100vh;
+}
+
+.main_container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+}
+
+nav .container {
+    display: flex;
+    padding: 0 100px;
+    justify-content: space-between;
+    background-color: #443344;
+    align-items: center;
+    height: 50px;
+}
+
+nav h1 a {
+    font-weight: 100;
+    text-decoration: none;
+    color:white ;
+    font-size: 22px;
+}
+
+nav h1 a:hover {
+    transition: .2s;
+    color:#EB243E ;
+    font-size: 23px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Work Sans';
+    font-size: 14px;
+    padding: 17px 17px 14px 17px;
+}
+
+nav ul li a:hover {
+    transition: .3s;
+    background-color: #ffffff1c;
+    border-bottom: 3px solid #EB243E ;
+}
+
+.banner {
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+.banner .overlay {
+    padding: 280px 0 220px;
+    background-color: RGBA(15, 5, 20, 0.84);
+    text-align: center;
+}
+
+.banner .overlay h1 {
+    font-weight: 100;
+    font-size: 50px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.banner .overlay h1 span {
+    color: #EB243E;
+}
+
+.banner .overlay p {
+    color: white;
+    font-family: 'Work Sans';
+}
+
+.banner .overlay a {
+    font-family: 'Work Sans';
+    text-decoration: none;
+    font-size: 15px;
+    border: rgba(204, 204, 204, 0.18) 1px solid;
+    color: #ccc;
+    padding: 15px 38px;
+    border-radius: 25px;
+    display: inline-block;
+    margin: 50px 0 0;
+}
+
+.banner .overlay a:hover {
+    transition:.2s;
+    color: RGBA(15, 5, 20, 0.84);
+    background-color:#ccc;
+}
+
+#our_work {
+    background-color: #FAF4FA;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#our_work h2 {
+    font-weight: 100;
+    border-bottom: 2px solid #EB243E;
+    width: 110px;
+    margin: 0 auto;
+}
+
+#our_work .portfolio {
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 0 50px 0;
+}
+#our_work .btn a {
+    font-family: "Work Sans";
+    text-decoration: none;
+    color: white;
+    background-color: #EB243E;
+    padding: 15px 30px;
+    border-radius: 30px;
+}
+
+#our_work .portfolio img {
+    filter: grayscale(100%);
+    width: 40%;
+    -webkit-filter: grayscale(100%);
+}
+
+#our_work .portfolio img:hover {
+    filter: grayscale(0%);
+    transition: .2s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width:42% ;
+    -webkit-filter: grayscale(0%);
+}
+
+#testimonial {
+    padding:0 0 50px 0;
+}
+
+#testimonial h2 {
+    font-weight: 100;
+    border-bottom: 2px solid #EB243E;
+    width: 160px;
+    margin: 50px auto;
+}
+
+#testimonial .remarks {
+    width: 30%;
+    background-color: #FAF4FA;
+    margin: 0 auto;
+    padding: 70px 100px;
+    border-radius: 20px;
+}
+
+#testimonial .remarks p {
+    font-family: 'Work Sans';
+    margin-bottom: 50px;
+    line-height: 1.5;
+}
+
+#testimonial .remarks h3 {
+    font-family: 'Work Sans';
+    font-weight: 600;
+}
+
+#testimonial .remarks .prf {
+    display: flex;
+    align-items: center;
+}
+
+#testimonial .remarks .prf img {
+    width: 50px;
+    border: 1px solid black;
+    border-radius: 40px;
+    margin-right: 50px;
+}
+
+.subscription {
+    background-image: url(../img/background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+}
+
+.subscription .overlay {
+    background-color: RGBA(15, 5, 20, 0.84);
+    padding: 80px 100px;
+    display: flex;
+    align-items: center;
+}
+.subscription .overlay .text {
+    width: 65%;
+}
+
+.subscription .overlay .text h2 {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 100;
+    border-bottom: 2px solid #EB243E;
+    width: 220px;
+    margin-bottom: 20px;
+}
+
+.subscription .overlay .text p {
+    color: #fff;
+    font-family: 'Work Sans';
+    line-height: 1.5;
+}
+
+.subscription .overlay .btn a {
+    font-family: "Work Sans";
+    text-decoration: none;
+    color: white;
+    background-color: #EB243E;
+    padding: 15px 30px;
+    border-radius: 30px;
+    margin-left: 70px;
+}
+
+#about_us {
+    padding: 50px 0;
+}
+
+#about_us h2 {
+    font-weight: 100;
+    border-bottom: 2px solid #EB243E;
+    width: 90px;
+    margin: 50px auto;
+}
+
+#about_us .text {
+    width: 60%;
+    margin: 0 auto;
+}
+
+#about_us p {
+    font-family: 'Work Sans';
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+#contact_us {
+    background-color: #F7F7F7;
+    padding: 50px 100px;
+}
+
+#contact_us h2 {
+    font-weight: 100;
+    border-bottom: 2px solid #EB243E;
+    width: 105px;
+    margin: 50px auto;
+}
+
+#contact_us .form form {
+    text-align: center;
+}
+
+#contact_us .form form input:first-child {
+    margin-bottom: 50px;
+}
+
+#contact_us .form form input {
+    font-family: 'Work Sans';
+    width: 100%;
+    padding: 0 20px 20px ;
+    background-color: #F7F7F7;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #EB243E;
+}
+
+#contact_us .form form input:hover {
+    transition: .2s;
+    border-bottom: 2px solid black;
+}
+
+#contact_us .form form input:focus {
+    border-bottom: 2px solid black;
+}
+
+#contact_us .form form input:last-child:hover {
+    border: none;
+}
+
+#contact_us .form form textarea:hover {
+    transition: .2s;
+    border-bottom: 2px solid black;
+}
+
+#contact_us .form form textarea:focus {
+    border-bottom: 2px solid black;
+}
+
+#contact_us .form form textarea {
+    font-family: 'Work Sans';
+    margin-top: 50px;
+    width: 100%;
+    height: 70px;
+    padding: 0 20px 20px ;
+    background-color: #F7F7F7;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #EB243E;
+}
+
+#contact_us .form form input:last-child {
+    border: none;
+    margin-top: 50px;
+    width: 10%;
+    font-family: "Work Sans";
+    text-decoration: none;
+    color: white;
+    background-color: #EB243E;
+    padding: 15px 30px;
+    border-radius: 30px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 0;
+    align-items: center;
+}
+
+footer h6 {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 16px;
+}
+
+footer h6 span {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 16px;
+}
+
+footer .social_media i:first-child {
+    padding: 20px;
+    margin: 0;
+}
+
+footer .social_media i {
+    color: #fff;
+    background-color: black;
+    padding: 20px 23px;
+    border-radius: 30px;
+    margin: 0 10px;
+}
+
+footer .social_media i:last-child {
+    padding: 20px 21px;
+    margin: 0;
+}
+
+footer .social_media i:hover {
+    transition: .2s;
+    background-color: #EB243E;
+}

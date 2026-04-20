@@ -3,99 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ethereal</title>
+    <title>Ethereal | Digital Studio</title>
     <script src="https://kit.fontawesome.com/db6c4cd2c4.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="wrepper">
-        <div class="main_container">
-            <header>
-                <nav>
-                    <div class="container">
+    <div class="wrapper">
+        <header>
+            <nav>
+                <div class="container">
+                    <div class="logo">
                         <h1><a href="#">Ethereal</a></h1>
-                    <ul>
+                    </div>
+                    
+                    <input type="checkbox" id="menu-bar">
+                    <label for="menu-bar"><i class="fas fa-bars"></i></label>
+
+                    <ul class="nav-links">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#our_work">Work</a></li>
-                        <li><a href="#testimonial">Testimonial</a></li>
-                        <li><a href="#about_us">About Us</a></li>
-                        <li><a href="#contact_us">Contact Us</a></li>
+                        <li><a href="#testimonial">Reviews</a></li>
+                        <li><a href="#about_us">About</a></li>
+                        <li><a href="#contact_us">Contact</a></li>
                     </ul>
-                    </div>
-                </nav>
-               <div id="home">
-                <div class="banner">
-                    <div class="overlay">
-                        <h1>Welcome to <span>Ethereal</span> World</h1>
-                        <p>One of the most beautiful HTML5 template designed by Ahmed Haneen</p>
-                        <a href="">Learn More</a>
+                </div>
+            </nav>
+
+            <div id="home" class="banner">
+                <div class="overlay">
+                    <div class="hero-content">
+                        <h1>Welcome to <span>Ethereal</span></h1>
+                        <p>Crafting beautiful digital experiences with precision and passion.</p>
+                        <a href="#our_work" class="main-btn">Explore Work</a>
                     </div>
                 </div>
-               </div>
-            </header>
-            <section>
-                <div id="our_work">
-                    <h2>Our Work</h2>
-                    <div class="portfolio">
-                        <img src="img/portfolio-1.jpg" alt="">
-                        <img src="img/portfolio-2.jpg" alt="">
-                        <img src="img/portfolio-3.jpg" alt="">
-                        <img src="img/portfolio-4.jpg" alt="">
-                    </div>
-                    <div class="btn">
-                        <a href="">Veiw More Items</a>
-                    </div>
-                </div>
-                <div id="testimonial">
-                    <h2>Cleint Remarks</h2>
-                    <div class="remarks">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti odit repellendus voluptate</p>
-                        <div class="prf">
-                            <img src="img/team-img-01.jpg" alt="">
-                            <h3>Ahmed Haneen</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="subscription">
-                    <div class="overlay">
-                        <div class="text">
-                            <h2>Subscribe For Updates</h2>
-                            <p>Join our 1000+ subscribers and get access to the latest tools, freebies, product announcements and much more!</p>
-                        </div>
-                        <div class="btn">
-                            <a href="">Subscribe Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div id="about_us">
-                    <h2>About Us</h2>
-                    <div class="text">
-                        <p>Donec velit ex, faucibus eu mauris in, sodales placerat augue. Phasellus feugiat ex id enim laoreet mattis. Quisque velit quam, pharetra non lorem vel, scelerisque ornare dolor. Etiam id ex justo. Nullam nec ipsum non augue convallis gravida. Praesent mattis placerat sodales. Pellentesque nec egestas neque</p>
-                        <p>Donec velit ex, faucibus eu mauris in, sodales placerat augue. Phasellus feugiat ex id enim laoreet mattis. Quisque velit quam, pharetra non lorem vel, scelerisque ornare dolor. Etiam id ex justo. Nullam nec ipsum non augue convallis gravida. Praesent mattis placerat sodales. Pellentesque nec egestas neque</p>
-                    </div>
-                </div>
-                <div id="contact_us">
-                    <h2>Contact Us</h2>
-                    <div class="form">
-                        <form action="#">
-                            <input type="text" placeholder="Name" required><br>
-                            <input type="email" placeholder="Email" required><br>
-                            <textarea placeholder="Message"></textarea><br>
-                            <a href=""><input type="submit"></a>
-                        </form>
+            </div>
+        </header>
+
+        <main>
+            <section id="our_work" class="section-padding">
+                <div class="container">
+                    <h2 class="section-title">Our Work</h2>
+                    <div class="portfolio-grid">
+                        <div class="portfolio-item"><img src="https://via.placeholder.com/600x400" alt="Work 1"></div>
+                        <div class="portfolio-item"><img src="https://via.placeholder.com/600x400" alt="Work 2"></div>
+                        <div class="portfolio-item"><img src="https://via.placeholder.com/600x400" alt="Work 3"></div>
+                        <div class="portfolio-item"><img src="https://via.placeholder.com/600x400" alt="Work 4"></div>
                     </div>
                 </div>
             </section>
-            <footer>
-                <h6>Copyright © Ethereal 2018</h6>
-                <div class="social_media">
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
+
+            <section id="testimonial" class="section-padding alt-bg">
+                <div class="container">
+                    <h2 class="section-title">Client Remarks</h2>
+                    <div class="testimonial-card">
+                        <p>"The attention to detail and unique design perspective offered by Ethereal transformed our brand's digital presence entirely."</p>
+                        <div class="profile">
+                            <img src="https://via.placeholder.com/100" alt="Client">
+                            <h3>Ahmed Haneen</h3>
+                            <span>Creative Director</span>
+                        </div>
+                    </div>
                 </div>
-                <h6>Designed by <span>Ahmed Haneen</span></h6>
-            </footer>
-        </div>
+            </section>
+
+            <section class="subscription">
+                <div class="overlay">
+                    <div class="container sub-flex">
+                        <div class="text">
+                            <h2>Stay in the Loop</h2>
+                            <p>Join 1,000+ others receiving the latest design insights.</p>
+                        </div>
+                        <a href="#" class="main-btn">Subscribe Now</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about_us" class="section-padding">
+                <div class="container">
+                    <h2 class="section-title">About Us</h2>
+                    <div class="about-content">
+                        <p>We are a team of dedicated creators pushing the boundaries of what's possible on the web. Our philosophy is simple: elegance through simplicity.</p>
+                        <p>Every pixel is placed with purpose, ensuring your brand doesn't just exist online—it thrives.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact_us" class="section-padding alt-bg">
+                <div class="container">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <form class="contact-form">
+                        <div class="input-group">
+                            <input type="text" placeholder="Name" required>
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <textarea placeholder="Your Message" rows="5"></textarea>
+                        <button type="submit" class="main-btn">Send Message</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container footer-content">
+                <p>&copy; 2026 Ethereal Studio</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <p>Designed by <span>Ahmed Haneen</span></p>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
